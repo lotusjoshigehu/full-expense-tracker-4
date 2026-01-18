@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense App</title>
+    <link rel="stylesheet" href="expense.css">
+</head>
+<body>
+
+<h2>Add Expense</h2>
+
+<form id="expenseForm">
+    <input id="amount" placeholder="Amount spent" required>
+    <input id="description" placeholder="Description" required>
+
+    <select id="category">
+        <option>Food</option>
+        <option>Petrol</option>
+        <option>Salary</option>
+        <option>Shopping</option>
+    </select>
+
+    <button type="submit">Add Expense</button>
+</form>
+
+<h3>Expenses</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Amount</th>
+            <th>Description</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody id="expenseTable"></tbody>
+</table>
+
+<script src="expense.js"></script>
+</body>
+</html>
